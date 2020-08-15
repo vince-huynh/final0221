@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 // question 21
-// our valuetype will have Value
+// our valuetype will have int Value
 namespace Final022
 {
     class Generic<T> where T: struct
@@ -16,7 +16,7 @@ namespace Final022
             items.Add(item);
         }
 
-        public T getSingle(params Value)
+        public T getSingle(int search)
         {
             return items.FirstOrDefault(search);
         }
